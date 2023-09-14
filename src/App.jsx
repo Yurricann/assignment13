@@ -1,12 +1,12 @@
 import Layout from "./Layout/Layout";
-import { RouterProvider, createBrowserRouter } from "react-router-dom";
+import { RouterProvider, createHashRouter } from "react-router-dom";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import Portfolio from "./Components/Portfolio/Portfolio";
 import Contact from "./Components/Contact/Contact";
 import NotFound from "./Components/NotFound/NotFound";
 
-let routers = createBrowserRouter([
+let routers = createHashRouter([
   {
     path: "",
     element: <Layout />,
